@@ -34,7 +34,7 @@ def iterate_through_bookmarks(bookmarks, folder):
         #     print()
         if folder == line:
             bookmark = parent_folder
-            print(type(bookmark))
+            # print(type(bookmark))
             # print(f"Bookmark: {line}")
             # pprint(bookmark)
             return bookmark
@@ -97,9 +97,11 @@ def main():
         folder = input("Which folder do you want to export? (Ex: /Banking/Credit Cards): ")
         output_file = "bookmarks.txt"
         export_bookmarks(folder, bookmarks_file, output_file)
+        print(f"Bookmarks exported to {output_file}")
     elif mode == "import":
         input_file = "bookmarks.txt"
         import_bookmarks(input_file, bookmarks_file_write)
+        print(f"Bookmarks imported to {bookmarks_file_write}")
     else:
         print("Invalid mode. Please enter 'import' or 'export'.")
 

@@ -7,5 +7,3 @@ Uses Python to import/export specific bookmark folders. Can be used to share boo
 
 # To do:
 - Make the iterate_through_bookmarks() function recursive instead of manually defining the child folders
-- Make the script OS agnostic
-- Print all bookmarks to the console for the user when exporting
